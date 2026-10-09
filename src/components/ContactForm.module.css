@@ -1,4 +1,5 @@
 .form {
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -53,16 +54,95 @@
   border-color: var(--text);
 }
 
-.input[aria-invalid="true"],
-.file[aria-invalid="true"] {
+.input[aria-invalid="true"] {
   border-color: var(--text);
   border-width: 2px;
 }
 
-.file {
+/* Datei-Upload: natives Feld bleibt (unsichtbar) bedienbar, die Optik kommt von Label + Box */
+.fileBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 14px;
+  min-height: 64px;
+  padding: 10px 12px;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  background: #fff;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.fileBoxDrag {
+  border-color: var(--text);
+  background: var(--muted-bg);
+}
+
+.fileBoxInvalid {
+  border: 2px solid var(--text);
+}
+
+.fileButton {
+  position: relative;
+  flex-shrink: 0;
+  color: var(--text);
+}
+
+.fileButton:has(input:focus-visible) {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+}
+
+.fileInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.fileName {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  min-width: 0;
+  /* Unter ~160px Platz rutscht der Dateiname in eine eigene Zeile */
+  flex: 1 1 160px;
   font-size: 14px;
+}
+
+.fileNameText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.fileSize {
+  flex-shrink: 0;
+  font-size: 13px;
+  color: var(--text-4);
+}
+
+.fileHint {
+  color: var(--text-4);
+}
+
+.fileRemove {
+  min-height: 44px;
+  padding: 0 6px;
+  border: none;
+  background: none;
   font-family: inherit;
-  padding: 10px 0;
+  font-size: 13px;
+  color: var(--text-3);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fileRemove:hover {
   color: var(--text);
 }
 

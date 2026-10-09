@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState, type FormEvent } from "react";
-import { LEISTUNGEN, MAX_DATEI_MB, pruefeAnfrage, type Fehler } from "@/lib/anfrage";
+import { formatGroesse, LEISTUNGEN, MAX_DATEI_MB, pruefeAnfrage, pruefeDatei, type Fehler } from "@/lib/anfrage";
 import styles from "./ContactForm.module.css";
 
 type Status = "idle" | "sending" | "success" | "error";
@@ -11,6 +11,22 @@ export function ContactForm() {
   const formRef = useRef<HTMLFormElement>(null);
   const [fehler, setFehler] = useState<Fehler>({});
   const [status, setStatus] = useState<Status>("idle");
+  const dateiRef = useRef<HTMLInputElement>(null);
+  const [datei, setDatei] = useState<{ name: string; size: number } | null>(null);
+  const [ziehen, setZiehen] = useState(false);
+
+  function dateiGewaehlt(input: HTMLInputElement) {
+    const f = input.files?.[0];
+    setDatei(f ? { name: f.name, size: f.size } : null);
+    setFehler(({ motiv: _, ...rest }) => (f && pruefeDatei(f) ? { ...rest, motiv: pruefeDatei(f) } : rest));
+  }
+
+  function dateiEntfernen() {
+    if (dateiRef.current) dateiRef.current.value = "";
+    setDatei(null);
+    setFehler(({ motiv: _, ...rest }) => rest);
+    dateiRef.current?.focus();
+  }
 
   // Vorauswahl über ?leistung=… (Links von /leistungen)
   useEffect(() => {
@@ -43,6 +59,7 @@ export function ContactForm() {
       const res = await fetch("/api/anfrage", { method: "POST", body: data });
       if (res.ok) {
         form.reset();
+        setDatei(null);
         setStatus("success");
         return;
       }
@@ -151,17 +168,56 @@ export function ContactForm() {
         />
       </label>
 
-      <label className={styles.label}>
-        Logo / Motiv anhängen (AI, EPS, PDF, SVG, PNG; max. {MAX_DATEI_MB} MB)
-        <input
-          className={styles.file}
-          type="file"
-          name="motiv"
-          accept=".ai,.eps,.pdf,.svg,.png,application/pdf,image/svg+xml,image/png,application/postscript"
-          {...feld("motiv")}
-        />
+      <div className={styles.label}>
+        <span id="motiv-label">Logo / Motiv anhängen (AI, EPS, PDF, SVG, PNG; max. {MAX_DATEI_MB} MB)</span>
+        <div
+          className={`${styles.fileBox} ${ziehen ? styles.fileBoxDrag : ""} ${fehler.motiv ? styles.fileBoxInvalid : ""}`}
+          onDragOver={(e) => {
+            e.preventDefault();
+            setZiehen(true);
+          }}
+          onDragLeave={() => setZiehen(false)}
+          onDrop={(e) => {
+            e.preventDefault();
+            setZiehen(false);
+            const input = dateiRef.current;
+            if (input && e.dataTransfer.files.length) {
+              input.files = e.dataTransfer.files;
+              dateiGewaehlt(input);
+            }
+          }}
+        >
+          <label className={`btn btn--light btn--sm ${styles.fileButton}`}>
+            <input
+              ref={dateiRef}
+              className={styles.fileInput}
+              type="file"
+              name="motiv"
+              accept=".ai,.eps,.pdf,.svg,.png,application/pdf,image/svg+xml,image/png,application/postscript"
+              aria-labelledby="motiv-label"
+              onChange={(e) => dateiGewaehlt(e.currentTarget)}
+              {...feld("motiv")}
+            />
+            {datei ? "Andere Datei" : "Datei auswählen"}
+          </label>
+          <span className={styles.fileName} aria-live="polite">
+            {datei ? (
+              <>
+                <span className={styles.fileNameText}>{datei.name}</span>
+                <span className={styles.fileSize}>{formatGroesse(datei.size)}</span>
+              </>
+            ) : (
+              <span className={styles.fileHint}>Keine Datei ausgewählt – oder hierher ziehen</span>
+            )}
+          </span>
+          {datei && (
+            <button type="button" className={styles.fileRemove} onClick={dateiEntfernen}>
+              Entfernen
+            </button>
+          )}
+        </div>
         {meldung("motiv")}
-      </label>
+      </div>
 
       {/* Honeypot – für Menschen unsichtbar */}
       <div className={styles.honeypot} aria-hidden="true">

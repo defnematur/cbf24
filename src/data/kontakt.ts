@@ -12,7 +12,7 @@ export const kontakt = {
   email: "info@cbf24.de",
   whatsapp: "https://wa.me/4917640064461",
   oeffnungszeiten: null as string | null, // [ÖFFNUNGSZEITEN]
-  instagramHandle: null as string | null, // [INSTAGRAM-HANDLE], ohne @
+  instagramHandle: "cbf24.de" as string | null, // ohne @ → https://www.instagram.com/cbf24.de/
   angebotWerktage: null as string | null, // [X] Werktage
   // Routenplaner mit der Werkstatt als Ziel (Start = Standort des Besuchers)
   routeUrl:

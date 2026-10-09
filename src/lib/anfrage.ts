@@ -26,11 +26,25 @@ export function pruefeAnfrage(data: FormData): Fehler {
   if (!email) f.email = "Bitte geben Sie Ihre E-Mail-Adresse an.";
   else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) f.email = "Bitte geben Sie eine gültige E-Mail-Adresse an.";
   const datei = data.get("motiv");
-  if (datei instanceof File && datei.size > 0) {
-    const endung = datei.name.split(".").pop()?.toLowerCase() ?? "";
-    if (!ERLAUBTE_ENDUNGEN.includes(endung)) f.motiv = "Erlaubt sind AI, EPS, PDF, SVG und PNG.";
-    else if (datei.size > MAX_DATEI_BYTES) f.motiv = `Die Datei ist größer als ${MAX_DATEI_MB} MB.`;
+  if (datei instanceof File) {
+    const dateiFehler = pruefeDatei(datei);
+    if (dateiFehler) f.motiv = dateiFehler;
   }
   if (!data.get("datenschutz")) f.datenschutz = "Bitte stimmen Sie der Datenschutzerklärung zu.";
   return f;
+}
+
+/** Prüft Dateityp und -größe des Motivs. Leere Datei = kein Anhang = ok. */
+export function pruefeDatei(datei: File): string | undefined {
+  if (datei.size === 0) return undefined;
+  const endung = datei.name.split(".").pop()?.toLowerCase() ?? "";
+  if (!ERLAUBTE_ENDUNGEN.includes(endung)) return "Erlaubt sind AI, EPS, PDF, SVG und PNG.";
+  if (datei.size > MAX_DATEI_BYTES) return `Die Datei ist größer als ${MAX_DATEI_MB} MB.`;
+  return undefined;
+}
+
+export function formatGroesse(bytes: number) {
+  return bytes < 1024 * 1024
+    ? `${Math.max(1, Math.round(bytes / 1024))} KB`
+    : `${(bytes / 1024 / 1024).toLocaleString("de-DE", { maximumFractionDigits: 1 })} MB`;
 }

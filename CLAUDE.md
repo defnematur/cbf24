@@ -99,7 +99,6 @@ Anything in `[BRACKETS]` in the templates is missing data:
 - `[PREIS]` / `[RABATT]`: the print price table (motif size × method) and quantity discounts
 - `[PREIS je Stichzahl]`: the per-piece embroidery price
 - `[ÖFFNUNGSZEITEN]`: opening hours
-- `[INSTAGRAM-HANDLE]`: the Instagram account
 - `[X] Werktage`: response time for quotes
 - The Grafikservice text from cbf24.de/Grafikservice-und-Tipps, which could not be loaded
 - All `[Foto: …]` / `[Video: …]` boxes: real images and videos from the owner. Ask for a folder of originals.
@@ -112,7 +111,7 @@ Anything in `[BRACKETS]` in the templates is missing data:
 - Process videos should be self-hosted MP4/WebM, `muted autoplay loop playsinline`, under 3 MB, with a poster image.
 - **Do not embed YouTube without consent** (GDPR).
 
-**Instagram**
+**Instagram** (account: @cbf24.de, https://www.instagram.com/cbf24.de/)
 
 - Simplest option: a static grid of 4–8 curated posts that link to the account.
 - Live-feed option: Behold.so or the Instagram Graph API, fetched at build time.
