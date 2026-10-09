@@ -3,6 +3,7 @@ title: "Vektor oder Pixel? Welche Datei wir für Ihr Logo brauchen"
 date: 2026-10-09
 kategorie: Grafikservice
 excerpt: "Warum eine Vektorgrafik die Stickdatei schneller und günstiger macht – und was wir tun, wenn Sie nur ein JPG haben."
+cover: /media/blog/vektor-oder-pixel.jpg
 ---
 
 Am besten liefern Sie uns Ihr Logo als Vektorgrafik: **AI, EPS, PDF oder SVG**. Mit einer Vektorgrafik geht die Erstellung des Stickprogramms je nach Motiv schneller und damit günstiger.

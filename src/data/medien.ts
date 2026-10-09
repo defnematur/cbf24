@@ -3,13 +3,19 @@
 // Noch ungenutzt: /media/beispiele/polo-ruecken.jpg (Polo-Rückseite mit großem CBF24-Logo)
 
 export type Bild = { alt: string; src?: string };
-export type Video = { beschreibung: string; src?: string; poster?: string };
+// src = MP4 (H.264), webm = optional VP9-Version; beide stumm, < 3 MB, mit Posterbild
+export type Video = { beschreibung: string; src?: string; webm?: string; poster?: string };
 
 export const startseite = {
   collageHintergrund: { alt: "Stickmaschine in der Werkstatt" } as Bild,
   collage: [
     { alt: "Bestickte Arbeitsjacke mit Logo" } as Bild,
-    { beschreibung: "Stickprozess – Nahaufnahme der Nadel, 15 s Loop" } as Video,
+    {
+      beschreibung: "Garnkonus an der Stickmaschine",
+      src: "/media/video/garnkonus.mp4",
+      webm: "/media/video/garnkonus.webm",
+      poster: "/media/video/garnkonus-poster.jpg",
+    } as Video,
     { alt: "Siebdruck auf T-Shirts, Vereinsauflage" } as Bild,
   ] as const,
   // Aus design/design.pdf (Flyer-Mockups) zugeschnitten – durch echte Fotos ersetzen, sobald vorhanden
@@ -35,7 +41,10 @@ export const instagramPosts: (Bild & { href?: string })[] = [
 
 export const leistungen = {
   stickereiVideo: {
-    beschreibung: "Stickmaschine im Einsatz – vom Einspannen bis zum fertigen Logo, ca. 45 s",
+    beschreibung: "Stickmaschine stickt ein Motiv – Nahaufnahme der Nadel",
+    src: "/media/video/stickprozess.mp4",
+    webm: "/media/video/stickprozess.webm",
+    poster: "/media/video/stickprozess-poster.jpg",
   } as Video,
   stickereiBeispiele: [
     {

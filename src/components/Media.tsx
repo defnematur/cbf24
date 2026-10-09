@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { CSSProperties } from "react";
 import type { Bild, Video } from "@/data/medien";
+import { AutoplayVideo } from "./AutoplayVideo";
 import { Icon } from "./Icon";
 import styles from "./Media.module.css";
 
@@ -58,16 +59,12 @@ export function VideoBlock({
   if (video.src) {
     return (
       <div className={`${styles.box} ${className}`}>
-        <video
+        <AutoplayVideo
           className={styles.img}
-          src={video.src}
+          mp4={video.src}
+          webm={video.webm}
           poster={video.poster}
-          muted
-          autoPlay
-          loop
-          playsInline
-          preload="none"
-          aria-label={video.beschreibung}
+          label={video.beschreibung}
         />
       </div>
     );
