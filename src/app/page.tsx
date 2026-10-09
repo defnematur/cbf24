@@ -18,7 +18,7 @@ const services = [
 
 export default function Home() {
   const posts = getPosts().slice(0, 3);
-  const [jacke, video, siebdruck] = startseite.collage;
+  const [links, video, rechts] = startseite.collage;
 
   return (
     <>
@@ -55,17 +55,12 @@ export default function Home() {
       {/* Foto-/Video-Collage */}
       <div className={`container ${styles.collageWrap}`}>
         <section className={styles.collage} aria-label="Einblicke in die Werkstatt">
-          {startseite.collageHintergrund.src ? (
-            <Foto bild={startseite.collageHintergrund} className={styles.collageBg} sizes="100vw" />
-          ) : (
-            <>
-              <div className={styles.collageBg} aria-hidden="true" />
-              <span className={styles.collageNote}>Hintergrund: Foto der Stickmaschine / Werkstatt</span>
-            </>
+          {startseite.collageHintergrund.src && (
+            <Foto bild={startseite.collageHintergrund} className={styles.collageBg} sizes="1120px" />
           )}
-          <Foto bild={jacke} className={`${styles.collageItem} ${styles.collageSide}`} tone="mid" />
-          <VideoBlock video={video} variant="light" className={`${styles.collageItem} ${styles.collageCenter}`} />
-          <Foto bild={siebdruck} className={`${styles.collageItem} ${styles.collageSide}`} tone="mid" />
+          <Foto bild={links} className={styles.tile} sizes="(max-width: 640px) 50vw, 340px" />
+          <VideoBlock video={video} variant="light" className={`${styles.tile} ${styles.tileCenter}`} />
+          <Foto bild={rechts} className={styles.tile} sizes="(max-width: 640px) 50vw, 340px" />
         </section>
       </div>
 
