@@ -12,6 +12,10 @@
 .h1 {
   font-size: 44px;
   line-height: 1.15;
+  /* Lange deutsche Wörter (z. B. „Geschäftsbedingungen“) dürfen umbrechen */
+  hyphens: auto;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .meta {
@@ -57,6 +61,27 @@
   padding-left: 22px;
 }
 
+/* Rechtstexte: lange Texte, kompaktere Überschriften */
+.legal {
+  font-size: 16px;
+}
+
+.legal h2:first-child {
+  margin-top: 0;
+}
+
+.legal h4 {
+  margin-top: 1.4em;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.legal p,
+.legal li {
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
 .back {
   display: inline-flex;
   align-items: center;
@@ -68,6 +93,12 @@
 
 .grid {
   margin-top: 8px;
+}
+
+@media (max-width: 400px) {
+  .h1 {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 640px) {
