@@ -8,7 +8,7 @@ import "./globals.css";
 import { ChatButton } from "@/components/ChatButton";
 import { Footer } from "@/components/Footer";
 import { Nav } from "@/components/Nav";
-import { kontakt, noindex, siteUrl } from "@/data/kontakt";
+import { instagramUrl, kontakt, noindex, siteUrl } from "@/data/kontakt";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -48,6 +48,7 @@ const jsonLd = {
     addressCountry: "DE",
   },
   ...(kontakt.oeffnungszeiten ? { openingHours: kontakt.oeffnungszeiten } : {}),
+  ...(kontakt.instagramHandle ? { sameAs: [instagramUrl()] } : {}),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
