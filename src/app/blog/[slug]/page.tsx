@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Icon } from "@/components/Icon";
@@ -19,7 +20,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: data.post.title,
     description: data.post.excerpt,
     alternates: { canonical: `/blog/${slug}` },
-    openGraph: { type: "article", publishedTime: data.post.date },
+    openGraph: {
+      type: "article",
+      publishedTime: data.post.date,
+      ...(data.post.cover ? { images: [data.post.cover] } : {}),
+    },
   };
 }
 
@@ -39,6 +44,11 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         </time>
       </header>
       <div className={`container ${styles.article}`}>
+        {post.cover && (
+          <div className={styles.cover}>
+            <Image src={post.cover} alt={post.title} fill priority sizes="(max-width: 800px) 100vw, 760px" />
+          </div>
+        )}
         <div className={`card ${styles.body}`} dangerouslySetInnerHTML={{ __html: html }} />
         <Link href="/blog" className={styles.back}>
           Alle Beiträge <Icon name="arrowRight" />

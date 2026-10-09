@@ -221,6 +221,11 @@ video {
   background: var(--bg);
 }
 
+/* Tabellen aus Markdown (Blog) scrollen mobil innerhalb ihres Rahmens */
+.table-scroll {
+  overflow-x: auto;
+}
+
 /* Fehlende Inhalte deutlich sichtbar */
 .placeholder-text {
   font-style: normal;

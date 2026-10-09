@@ -40,7 +40,11 @@ export function getPost(slug: string) {
   const file = `${slug}.md`;
   if (!fs.existsSync(path.join(DIR, file))) return null;
   const { post, content } = read(file);
-  return { post, html: marked.parse(content, { async: false }) };
+  const html = marked
+    .parse(content, { async: false })
+    .replace(/<table>/g, '<div class="table-scroll"><table>')
+    .replace(/<\/table>/g, "</table></div>");
+  return { post, html };
 }
 
 export function formatDatum(iso: string) {

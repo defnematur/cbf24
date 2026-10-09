@@ -82,6 +82,44 @@
   hyphens: auto;
 }
 
+.body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.body th,
+.body td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border-2);
+  text-align: left;
+}
+
+.body th {
+  font-weight: 500;
+  color: var(--text-3);
+  background: var(--muted-bg);
+}
+
+.body td:not(:first-child),
+.body th:not(:first-child) {
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+.cover {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 24px;
+  border-radius: var(--radius-block);
+  overflow: hidden;
+}
+
+.cover img {
+  object-fit: cover;
+}
+
 .back {
   display: inline-flex;
   align-items: center;
