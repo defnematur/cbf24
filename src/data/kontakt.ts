@@ -11,7 +11,20 @@ export const kontakt = {
   fax: "089 61469281",
   email: "info@cbf24.de",
   whatsapp: "https://wa.me/4917640064461",
-  oeffnungszeiten: null as string | null, // [ÖFFNUNGSZEITEN]
+  // Öffnungszeiten (vom Inhaber, Okt. 2026). `schema` = Zeiten für Google (LocalBusiness-JSON-LD).
+  oeffnungszeiten: [
+    {
+      tage: "Montag–Donnerstag",
+      zeiten: "08.00–12.00 Uhr und 13.00–16.00 Uhr",
+      schema: { tage: ["Monday", "Tuesday", "Wednesday", "Thursday"], von: ["08:00", "13:00"], bis: ["12:00", "16:00"] },
+    },
+    {
+      tage: "Freitag",
+      zeiten: "08.00–12.00 Uhr",
+      schema: { tage: ["Friday"], von: ["08:00"], bis: ["12:00"] },
+    },
+  ],
+  oeffnungszeitenHinweis: "und nach Vereinbarung – bitte rufen Sie uns für eine Beratung vorab an.",
   instagramHandle: "cbf24.de" as string | null, // ohne @ → https://www.instagram.com/cbf24.de/
   angebotWerktage: null as string | null, // [X] Werktage
   // Routenplaner mit der Werkstatt als Ziel (Start = Standort des Besuchers)

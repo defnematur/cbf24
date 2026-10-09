@@ -58,10 +58,14 @@ export default function Kontakt() {
             <div className={styles.infoRow}>
               <Icon name="clock" size={20} />
               <div className={styles.infoLines}>
-                <span>
-                  Mo–Fr <Platzhalter wert={kontakt.oeffnungszeiten} label="ÖFFNUNGSZEITEN" />
-                </span>
-                <span className={styles.infoMuted}>Termine außerhalb nach Absprache</span>
+                <span className="sr-only">Öffnungszeiten:</span>
+                {kontakt.oeffnungszeiten.map((o) => (
+                  <span key={o.tage} className={styles.hours}>
+                    <span className={styles.hoursDay}>{o.tage}</span>
+                    <span>{o.zeiten}</span>
+                  </span>
+                ))}
+                <span className={styles.infoMuted}>{kontakt.oeffnungszeitenHinweis}</span>
               </div>
             </div>
             <div className="btn-row">

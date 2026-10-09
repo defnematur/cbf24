@@ -30,7 +30,7 @@ export const viewport: Viewport = {
   themeColor: "#F4F4F4",
 };
 
-// LocalBusiness ohne Öffnungszeiten und Geo-Koordinaten, solange diese nicht vom Inhaber bestätigt sind.
+// LocalBusiness – Geo-Koordinaten fehlen noch (beim Inhaber bzw. im Google-Unternehmensprofil erfragen).
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -47,7 +47,14 @@ const jsonLd = {
     addressLocality: kontakt.ort,
     addressCountry: "DE",
   },
-  ...(kontakt.oeffnungszeiten ? { openingHours: kontakt.oeffnungszeiten } : {}),
+  openingHoursSpecification: kontakt.oeffnungszeiten.flatMap((o) =>
+    o.schema.von.map((von, i) => ({
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: o.schema.tage,
+      opens: von,
+      closes: o.schema.bis[i],
+    })),
+  ),
   ...(kontakt.instagramHandle ? { sameAs: [instagramUrl()] } : {}),
 };
 

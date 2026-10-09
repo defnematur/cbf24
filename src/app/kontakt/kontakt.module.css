@@ -71,6 +71,17 @@
   gap: 2px;
 }
 
+.hours {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6px;
+}
+
+.hoursDay {
+  font-size: 13px;
+  color: var(--on-dark-3);
+}
+
 .infoMuted {
   font-size: 13px;
   color: var(--on-dark-3);

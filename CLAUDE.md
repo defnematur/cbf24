@@ -99,7 +99,6 @@ Anything in `[BRACKETS]` in the templates is missing data:
 
 - `[PREIS]` / `[RABATT]`: the print price table (motif size × method) and quantity discounts
 - `[PREIS je Stichzahl]`: the per-piece embroidery price
-- `[ÖFFNUNGSZEITEN]`: opening hours
 - `[X] Werktage`: response time for quotes
 - All `[Foto: …]` / `[Video: …]` boxes: real images and videos from the owner. Ask for a folder of originals.
 
