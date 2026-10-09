@@ -70,12 +70,43 @@
 
 /* Mobil: Menü-Button statt Navigation */
 @media (max-width: 760px) {
+  /* Mobil: Logo mittig, Menü-Symbol rechts (linke Spalte hält den Platz frei) */
+  .header {
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
+    align-items: center;
+    gap: 12px 8px;
+  }
+  .logo {
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  /* Nur die drei Linien – ohne Rahmen und Hintergrund, Tippfläche bleibt 44 × 44 px */
   .menuButton {
     display: inline-flex;
+    grid-column: 3;
+    justify-self: end;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    background: transparent;
+  }
+  .menuLabel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
   }
 
   .panel {
     display: none;
+    grid-column: 1 / -1;
     flex-basis: 100%;
     flex-direction: column;
     align-items: stretch;
@@ -108,22 +139,9 @@
   }
 }
 
-/* Sehr schmal (360px): Button nur mit Icon, damit er neben dem Logo bleibt */
+/* Sehr schmal (360px): Logo etwas kleiner */
 @media (max-width: 400px) {
   .logoImg {
     height: 48px;
-  }
-  .menuButton {
-    width: 44px;
-    padding: 0;
-    justify-content: center;
-  }
-  .menuLabel {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
   }
 }

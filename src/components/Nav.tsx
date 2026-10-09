@@ -48,7 +48,7 @@ export function Nav() {
         aria-controls="hauptnavigation"
         onClick={() => setOpen((o) => !o)}
       >
-        <Icon name={open ? "close" : "menu"} size={20} />
+        <Icon name={open ? "close" : "menu"} size={26} />
         <span className={styles.menuLabel}>{open ? "Schließen" : "Menü"}</span>
       </button>
 
