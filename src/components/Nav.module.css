@@ -1,0 +1,129 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 28px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Original-Logo (design/logo.png), freigestellt in public/brand/ */
+.logoImg {
+  width: auto;
+  height: 56px;
+}
+
+.panel {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-left: 32px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-inline: auto;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.link {
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+.link:hover {
+  color: var(--text-3);
+}
+
+.active {
+  border-bottom-color: var(--text);
+}
+.active:hover {
+  color: var(--text);
+}
+
+.menuButton {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Mobil: Menü-Button statt Navigation */
+@media (max-width: 760px) {
+  .menuButton {
+    display: inline-flex;
+  }
+
+  .panel {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 0;
+    padding: 20px;
+    border-radius: var(--radius-card);
+    background: #fff;
+    box-shadow: var(--shadow);
+  }
+  .panel.open {
+    display: flex;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    border-bottom: 1px solid var(--border-2);
+  }
+  .active {
+    font-weight: 600;
+    border-bottom-color: var(--border-2);
+  }
+}
+
+/* Sehr schmal (360px): Button nur mit Icon, damit er neben dem Logo bleibt */
+@media (max-width: 400px) {
+  .logoImg {
+    height: 48px;
+  }
+  .menuButton {
+    width: 44px;
+    padding: 0;
+    justify-content: center;
+  }
+  .menuLabel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+}

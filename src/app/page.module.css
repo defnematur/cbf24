@@ -1,0 +1,265 @@
+/* Hero */
+.hero {
+  max-width: 760px;
+  margin-inline: auto;
+  padding: 96px var(--gutter) 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.lead {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-2);
+  max-width: 560px;
+}
+
+/* Leistungen-Leiste */
+.strip {
+  max-width: 920px;
+  margin-inline: auto;
+  border-radius: var(--radius-block);
+  padding: 36px 40px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.stripItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stripTitle {
+  font-size: 16px;
+}
+
+.rule {
+  display: block;
+  width: 36px;
+  height: 2px;
+  background: var(--text);
+}
+
+.stripText {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-3);
+}
+
+/* Collage */
+.collageWrap {
+  max-width: calc(1180px + 2 * var(--gutter));
+  margin-top: 72px;
+}
+
+.collage {
+  position: relative;
+  height: 520px;
+  border-radius: var(--radius-section);
+  background: var(--video);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 24px;
+}
+
+.collage .collageBg {
+  position: absolute;
+  inset: 0;
+  border-radius: 0;
+  background: linear-gradient(90deg, #1c1c1c 0%, #3a3a3a 55%, #8c8c8c 100%);
+}
+
+.collageNote {
+  position: absolute;
+  left: 32px;
+  top: 28px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.collage .collageItem {
+  position: relative;
+  width: 300px;
+  border-radius: var(--radius-card);
+}
+
+.collage .collageSide {
+  height: 260px;
+}
+
+.collage .collageCenter {
+  height: 300px;
+  background: #f0f0f0;
+}
+
+/* Stickerei / Druckerei */
+.twoWays {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.wayCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+}
+
+.wayImage {
+  height: 240px;
+}
+
+.wayTitle {
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.wayText {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-3);
+}
+
+.more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bannerWrap {
+  margin-top: 32px;
+}
+
+/* Instagram & Blog */
+.block {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.blockHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.instaGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.instaGrid .instaItem {
+  aspect-ratio: 1 / 1;
+  font-size: 12px;
+  color: #666;
+  background: var(--border-2);
+}
+
+@media (max-width: 1000px) {
+  .collage {
+    height: 440px;
+    gap: 16px;
+    padding-inline: 16px;
+  }
+  .collage .collageItem {
+    flex: 1;
+    width: auto;
+  }
+  .collage .collageSide {
+    height: 220px;
+  }
+  .collage .collageCenter {
+    height: 260px;
+  }
+}
+
+@media (max-width: 900px) {
+  .strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .twoWays {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobil: Collage stapelt sich (Vorlage: drei Kacheln nebeneinander, bei 360px nicht lesbar) */
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 56px;
+  }
+  .h1 {
+    font-size: 38px;
+  }
+  .lead {
+    font-size: 17px;
+  }
+  .strip {
+    grid-template-columns: 1fr;
+    padding: 28px 24px;
+    gap: 24px;
+  }
+  .collageWrap {
+    margin-top: 48px;
+  }
+  .collage {
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 64px 16px 16px;
+    border-radius: var(--radius-block);
+  }
+  .collageNote {
+    left: 20px;
+    top: 24px;
+    right: 20px;
+  }
+  .collage .collageSide,
+  .collage .collageCenter {
+    flex: none;
+    height: 200px;
+  }
+  .twoWays {
+    margin-top: 48px;
+    gap: 24px;
+  }
+  .wayCard {
+    padding: 24px;
+  }
+  .wayImage {
+    height: 200px;
+  }
+  .wayTitle {
+    font-size: 26px;
+  }
+  .block {
+    margin-top: 56px;
+  }
+  .instaGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+}

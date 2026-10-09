@@ -1,0 +1,47 @@
+.wrap {
+  margin-top: 96px;
+  padding-bottom: 80px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 32px;
+  border-top: 1px solid #dadada;
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.firma {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 24px;
+}
+
+.links a,
+.address a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  gap: 4px;
+}
+
+.links a:hover,
+.address a:hover {
+  color: var(--text);
+}

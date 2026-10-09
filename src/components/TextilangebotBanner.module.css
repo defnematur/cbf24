@@ -1,0 +1,76 @@
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  border-radius: var(--radius-block);
+}
+
+.dark {
+  background: var(--dark);
+  color: #fff;
+  padding: 48px;
+}
+
+.light {
+  gap: 24px;
+  padding: 40px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 620px;
+}
+
+.light .text {
+  gap: 8px;
+  max-width: 640px;
+}
+
+.eyebrowDark {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--on-dark-3);
+}
+
+.title {
+  font-size: 32px;
+  line-height: 1.15;
+}
+
+.titleSmall {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.copyDark {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--on-dark-2);
+}
+
+.copyLight {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-3);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .dark,
+  .light {
+    padding: 28px 24px;
+  }
+  .title {
+    font-size: 26px;
+  }
+}

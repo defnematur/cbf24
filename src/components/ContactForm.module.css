@@ -1,0 +1,149 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 40px;
+  scroll-margin-top: 24px;
+}
+
+.title {
+  margin-bottom: 6px;
+  font-size: 24px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.input {
+  min-height: 46px;
+  padding: 0 14px;
+}
+
+.textarea {
+  padding: 12px 14px;
+  resize: vertical;
+}
+
+.input:focus-visible,
+.textarea:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 0;
+  border-color: var(--text);
+}
+
+.input[aria-invalid="true"],
+.file[aria-invalid="true"] {
+  border-color: var(--text);
+  border-width: 2px;
+}
+
+.file {
+  font-size: 14px;
+  font-family: inherit;
+  padding: 10px 0;
+  color: var(--text);
+}
+
+.error {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+}
+.error::before {
+  content: "! ";
+}
+
+.consentWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-3);
+  line-height: 1.5;
+}
+
+.consent input {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: var(--dark);
+}
+
+.consent a,
+.formError a {
+  text-decoration: underline;
+}
+
+.honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.formError {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--text);
+  font-size: 14px;
+}
+
+.submit {
+  align-self: flex-start;
+}
+.submit:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.required {
+  font-size: 12px;
+  color: var(--text-4);
+}
+
+.successText {
+  font-size: 15px;
+  color: var(--text-2);
+}
+
+@media (max-width: 640px) {
+  .form {
+    padding: 24px;
+  }
+  .row {
+    grid-template-columns: 1fr;
+  }
+  .submit {
+    align-self: stretch;
+  }
+}

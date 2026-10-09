@@ -1,0 +1,99 @@
+.intro {
+  max-width: 760px;
+  margin-inline: auto;
+  padding: 88px var(--gutter) 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.h1 {
+  font-size: 52px;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text-2);
+  max-width: 560px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  align-items: start;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  border-radius: var(--radius-block);
+  background: var(--dark);
+  color: #fff;
+  font-style: normal;
+}
+
+.info a:hover {
+  color: var(--on-dark-2);
+}
+
+.infoTitle {
+  font-size: 22px;
+}
+
+.infoRow {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.infoRow > svg {
+  margin-top: 2px;
+}
+
+.infoLines {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.infoMuted {
+  font-size: 13px;
+  color: var(--on-dark-3);
+}
+
+.banner {
+  margin-top: 48px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .intro {
+    padding-top: 56px;
+  }
+  .h1 {
+    font-size: 36px;
+  }
+  .info {
+    padding: 28px 24px;
+  }
+}
