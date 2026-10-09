@@ -3,6 +3,7 @@ title: "Arbeitskleidung besticken: Worauf es bei Firmenkleidung ankommt"
 date: 2026-10-03
 kategorie: Stickerei
 excerpt: "Firmenkleidung muss viel aushalten. Was Sie bei Textil, Logo und Nachbestellung beachten sollten, damit Ihr Team lange gut aussieht."
+cover: /media/blog/arbeitskleidung-besticken.jpg
 ---
 
 Arbeitskleidung mit Logo ist Visitenkarte und Arbeitsmittel zugleich. Sie wird häufig gewaschen, stark beansprucht und soll trotzdem lange professionell aussehen.

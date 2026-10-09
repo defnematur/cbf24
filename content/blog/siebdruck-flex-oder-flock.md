@@ -3,6 +3,7 @@ title: "Siebdruck, Flex oder Flock? Das richtige Verfahren für Ihre Auflage"
 date: 2026-10-07
 kategorie: Druckerei
 excerpt: "Ab wann sich Siebdruck lohnt, wann Flex die bessere Wahl ist und welches Verfahren Farbverläufe kann."
+cover: /media/blog/siebdruck-flex-oder-flock.jpg
 ---
 
 Je nach Motiv, Farbanzahl, Stoff und Stückzahl empfehlen wir Ihnen das passende Verfahren.

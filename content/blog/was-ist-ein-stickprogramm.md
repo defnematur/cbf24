@@ -3,6 +3,7 @@ title: "Was ein Stickprogramm ist – und warum es die Qualität entscheidet"
 date: 2026-10-08
 kategorie: Stickerei
 excerpt: "Stickdichte, Stickrichtung, Reihenfolge: ein Blick auf das, was der Puncher vor dem ersten Stich festlegt."
+cover: /media/blog/was-ist-ein-stickprogramm.jpg
 ---
 
 Jedes Motiv bekommt sein eigenes Stickprogramm (Punch). Unser Puncher legt Stickdichte, -richtung, -abstand, Muster und Reihenfolge fest – abgestimmt auf Motiv, Maschine und Stoff.
