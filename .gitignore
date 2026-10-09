@@ -9,3 +9,7 @@ next-env.d.ts
 .DS_Store
 .idea/
 .playwright-mcp/
+
+# Originale (Fotos/Videos) – nur die optimierten Versionen in public/media/ gehören ins Repo
+images/
+videos/
