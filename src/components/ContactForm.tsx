@@ -169,7 +169,7 @@ export function ContactForm() {
       </label>
 
       <div className={styles.label}>
-        <span id="motiv-label">Logo / Motiv anhängen (AI, EPS, PDF, SVG, PNG; max. {MAX_DATEI_MB} MB)</span>
+        <span id="motiv-label">Logo / Motiv anhängen (AI, EPS, PDF, SVG, PNG, JPG, TIFF, BMP, CDR; max. {MAX_DATEI_MB} MB)</span>
         <div
           className={`${styles.fileBox} ${ziehen ? styles.fileBoxDrag : ""} ${fehler.motiv ? styles.fileBoxInvalid : ""}`}
           onDragOver={(e) => {
@@ -193,7 +193,7 @@ export function ContactForm() {
               className={styles.fileInput}
               type="file"
               name="motiv"
-              accept=".ai,.eps,.pdf,.svg,.png,application/pdf,image/svg+xml,image/png,application/postscript"
+              accept=".ai,.eps,.pdf,.svg,.png,.jpg,.jpeg,.tif,.tiff,.bmp,.cdr"
               aria-labelledby="motiv-label"
               onChange={(e) => dateiGewaehlt(e.currentTarget)}
               {...feld("motiv")}

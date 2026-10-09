@@ -248,14 +248,20 @@ export default function Leistungen() {
           </h2>
           <p className={styles.body15}>
             Am besten liefern Sie Vektordaten (AI, EPS, PDF, SVG). Haben Sie nur ein JPG oder PNG? Wir zeichnen Ihr Logo
-            nach – [TEXT AUS „GRAFIKSERVICE UND TIPPS“ ERGÄNZEN].
+            nach – für Stickerei, Sieb- und Offsetdruck genügt oft auch eine Pixelgrafik mit 300 dpi. Für Flex- und
+            Flockdruck brauchen wir eine Vektorgrafik ohne Farbverläufe in 1:1-Originalgröße.
           </p>
           <ul className={styles.list}>
             <li>Vektorformate: AI, EPS, PDF, SVG</li>
             <li>Pixelbilder: mind. 300 dpi in Originalgröße</li>
             <li>Schriften in Pfade umwandeln</li>
             <li>Farben als Pantone oder HKS angeben</li>
+            <li>Vektorpfade geschlossen und ohne Überschneidungen</li>
+            <li>Word, Excel und PowerPoint eignen sich nicht zur Grafikerstellung</li>
           </ul>
+          <Link href="/blog/vektor-oder-pixel" className={styles.more}>
+            Alle Dateiformate je Verfahren
+          </Link>
         </section>
       </div>
     </>

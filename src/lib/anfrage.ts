@@ -8,7 +8,8 @@ export const LEISTUNGEN = [
   "Noch unklar – bitte beraten",
 ];
 
-export const ERLAUBTE_ENDUNGEN = ["ai", "eps", "pdf", "svg", "png"];
+// Laut „Grafikservice und Tipps“ der alten Website zusätzlich JPG, TIFF, BMP und CorelDRAW (.cdr)
+export const ERLAUBTE_ENDUNGEN = ["ai", "eps", "pdf", "svg", "png", "jpg", "jpeg", "tif", "tiff", "bmp", "cdr"];
 
 // Vercel Functions nehmen max. 4,5 MB pro Anfrage an (Datei + Formularfelder).
 export const MAX_DATEI_MB = 4;
@@ -38,7 +39,7 @@ export function pruefeAnfrage(data: FormData): Fehler {
 export function pruefeDatei(datei: File): string | undefined {
   if (datei.size === 0) return undefined;
   const endung = datei.name.split(".").pop()?.toLowerCase() ?? "";
-  if (!ERLAUBTE_ENDUNGEN.includes(endung)) return "Erlaubt sind AI, EPS, PDF, SVG und PNG.";
+  if (!ERLAUBTE_ENDUNGEN.includes(endung)) return "Erlaubt sind AI, EPS, PDF, SVG, PNG, JPG, TIFF, BMP und CDR.";
   if (datei.size > MAX_DATEI_BYTES) return `Die Datei ist größer als ${MAX_DATEI_MB} MB.`;
   return undefined;
 }

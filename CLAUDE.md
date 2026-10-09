@@ -38,7 +38,7 @@ Next 16 notes: `params` in pages are a Promise (`await params`); middleware is c
 | External | `https://cbf24-textil.de/` | Textile catalogue run by the supplier. We can't change it, only link to it. Open it in a new tab with an ↗ icon |
 | External | `https://hakro.com/` | Hakro workwear collection |
 
-The nav order is Start · Stickerei · Druckerei · Kontakt, followed by a black pill button labelled "Textilangebot ↗". The Stickerei and Druckerei nav items link to `/leistungen#stickerei` and `/leistungen#druckerei`.
+The nav order is Start · Stickerei · Druckerei · Blog · Kontakt (Blog added 2026-10-09 at the owner's request), followed by a black pill button labelled "Textilangebot ↗". The Stickerei and Druckerei nav items link to `/leistungen#stickerei` and `/leistungen#druckerei`.
 
 ## Design rules (decided — do not change without asking)
 
@@ -100,7 +100,6 @@ Anything in `[BRACKETS]` in the templates is missing data:
 - `[PREIS je Stichzahl]`: the per-piece embroidery price
 - `[ÖFFNUNGSZEITEN]`: opening hours
 - `[X] Werktage`: response time for quotes
-- The Grafikservice text from cbf24.de/Grafikservice-und-Tipps, which could not be loaded
 - All `[Foto: …]` / `[Video: …]` boxes: real images and videos from the owner. Ask for a folder of originals.
 
 ## Features — implementation notes
@@ -124,7 +123,7 @@ Anything in `[BRACKETS]` in the templates is missing data:
 
 **Contact form**
 
-- Fields: name, Firma/Verein, email, phone, Leistung (select), Stückzahl, message, file upload (AI, EPS, PDF, SVG, PNG; max 4 MB, because Vercel Functions accept at most 4.5 MB per request. For 10 MB, switch to Vercel Blob client uploads) and a required privacy checkbox.
+- Fields: name, Firma/Verein, email, phone, Leistung (select), Stückzahl, message, file upload (AI, EPS, PDF, SVG, PNG, JPG, TIFF, BMP, CDR – formats from the old Grafikservice page; max 4 MB, because Vercel Functions accept at most 4.5 MB per request. For 10 MB, switch to Vercel Blob client uploads) and a required privacy checkbox.
 - Add honeypot spam protection. Show a success message in place, without reloading the page.
 
 **Chatbot**

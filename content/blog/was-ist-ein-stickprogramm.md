@@ -15,4 +15,12 @@ Eine Stickdatei wird für ein bestimmtes Gewebe und eine bestimmte Größe erste
 
 Die Stickdatei wird archiviert – Nachbestellungen kosten keine Erstellungsgebühr mehr.
 
-[TEXT FOLGT – vom Inhaber ergänzen]
+## Erfahrung statt Knopfdruck
+
+Der Puncher bestimmt maßgeblich die Qualität des fertigen Stickerzeugnisses. Hier gilt es dutzende Parameter wie Stickdichte, Stickrichtung, Stickabstand, Stickmuster und Reihenfolge der Stickarbeit richtig auf das Motiv, die Stickmaschine und das zu bestickende Textil anzupassen. So erfordert das Punchen ein großes Maß an Wissen und Erfahrung.
+
+## Vektorgrafik spart Zeit und Geld
+
+Je nach Motiv kann bei der Verwendung von Vektorgrafiken eine Zeit- und somit auch eine Kostenersparnis bei der Stickdateierstellung auftreten. Welche Dateien wir brauchen, lesen Sie in [Vektor oder Pixel?](/blog/vektor-oder-pixel).
+
+Die Preise für die Erstellung des Stickprogramms finden Sie unter [Leistungen › Stickerei](/leistungen#stickerei).

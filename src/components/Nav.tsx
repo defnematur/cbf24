@@ -13,6 +13,7 @@ const items = [
   { href: "/", label: "Start", match: (p: string) => p === "/" },
   { href: "/leistungen#stickerei", label: "Stickerei", match: (p: string) => p === "/leistungen" },
   { href: "/leistungen#druckerei", label: "Druckerei", match: (p: string) => p === "/leistungen" },
+  { href: "/blog", label: "Blog", match: (p: string) => p === "/blog" || p.startsWith("/blog/") },
   { href: "/kontakt", label: "Kontakt", match: (p: string) => p === "/kontakt" },
 ];
 
