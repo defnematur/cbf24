@@ -71,7 +71,7 @@ The nav order is Start · Stickerei · Druckerei · Kontakt, followed by a black
 - Stitch files can be scaled by at most about 10%. Vector files make them faster and cheaper to produce.
 - Stitch files are archived, so repeat orders carry no new setup cost.
 
-**Stickerei prices** (stitch program, one-off, plus VAT):
+**Stickerei prices** (stitch program, one-off, **including VAT** – matches AGB §3; decided 2026-10-09):
 
 | Item | Price |
 |---|---|
@@ -120,7 +120,7 @@ Anything in `[BRACKETS]` in the templates is missing data:
 **Price tables**
 
 - Prices live in one data file (`src/data/preise.ts`) so the owner edits one place.
-- Show "zzgl. MwSt." on every table.
+- Show "inkl. MwSt." on every table (prices are gross, as in AGB §3).
 
 **Contact form**
 

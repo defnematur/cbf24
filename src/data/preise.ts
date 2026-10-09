@@ -1,4 +1,4 @@
-// Einzige Quelle für alle Preise. Alle Preise zzgl. MwSt.
+// Einzige Quelle für alle Preise. Alle Preise inkl. MwSt. (laut AGB §3, Stand 10/2026).
 // `null` = Preis fehlt noch, beim Inhaber erfragen. Wird als Platzhalter angezeigt – niemals schätzen.
 
 export type Preis = string | null;

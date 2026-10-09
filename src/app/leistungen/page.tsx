@@ -138,7 +138,7 @@ export default function Leistungen() {
             <div className={styles.stack14}>
               <h3 className={styles.h3}>Preise Stickprogramm</h3>
               <p className={styles.small14}>
-                Einmalige Kosten für die Erstellung der Stickdatei, zzgl. MwSt. Der Preis pro Stück richtet sich danach
+                Einmalige Kosten für die Erstellung der Stickdatei, inkl. MwSt. Der Preis pro Stück richtet sich danach
                 nach Stichzahl, Textil und Auflage – wir rechnen Ihnen das gern vor.
               </p>
               <StickPreise />
@@ -202,7 +202,7 @@ export default function Leistungen() {
             <div className={styles.priceHead}>
               <h3 className={styles.h3}>Preise Druck</h3>
               <span className={styles.priceHint}>
-                Richtwerte pro Stück, zzgl. MwSt. und Textil – abhängig von Motivgröße, Verfahren und Auflage
+                Richtwerte pro Stück, inkl. MwSt., zzgl. Textil – abhängig von Motivgröße, Verfahren und Auflage
               </span>
             </div>
             <DruckPreise />

@@ -34,7 +34,7 @@ export function DruckPreise() {
     // Tabelle scrollt auf schmalen Bildschirmen horizontal innerhalb ihres Rahmens
     <div className={styles.scroll} tabIndex={0} role="region" aria-label="Preistabelle Druck, horizontal scrollbar">
       <table className={styles.table}>
-        <caption className="sr-only">Richtwerte pro Stück, zzgl. MwSt. und Textil</caption>
+        <caption className="sr-only">Richtwerte pro Stück, inkl. MwSt., zzgl. Textil</caption>
         <thead>
           <tr>
             <th scope="col">Motivgröße</th>

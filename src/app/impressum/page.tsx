@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import styles from "@/components/TextPage.module.css";
+import { rechtstext } from "@/lib/rechtliches";
 
 export const metadata: Metadata = {
   title: "Impressum",
@@ -7,7 +8,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "/impressum" },
 };
 
-// TODO: Text von cbf24.de übernehmen und vom Inhaber bestätigen lassen.
 export default function Page() {
   return (
     <>
@@ -15,9 +15,7 @@ export default function Page() {
         <h1 className={styles.h1}>Impressum</h1>
       </section>
       <div className={`container ${styles.article}`}>
-        <div className={`card ${styles.body}`}>
-          <p>[TEXT FOLGT – Impressum von cbf24.de übernehmen und vom Inhaber bestätigen lassen]</p>
-        </div>
+        <div className={`card ${styles.body} ${styles.legal}`} dangerouslySetInnerHTML={{ __html: rechtstext("impressum") }} />
       </div>
     </>
   );
