@@ -2,7 +2,7 @@ import Link from "next/link";
 import { BlogCard, BlogGrid } from "@/components/BlogCard";
 import { ExternalLink } from "@/components/ExternalLink";
 import { Icon } from "@/components/Icon";
-import { Foto, VideoBlock } from "@/components/Media";
+import { Foto } from "@/components/Media";
 import { TextilangebotBanner } from "@/components/TextilangebotBanner";
 import { instagramUrl, kontakt } from "@/data/kontakt";
 import { instagramPosts, instagramRasterAnzeigen, startseite } from "@/data/medien";
@@ -18,7 +18,6 @@ const services = [
 
 export default function Home() {
   const posts = getPosts().slice(0, 3);
-  const [links, video, rechts] = startseite.collage;
 
   return (
     <>
@@ -49,18 +48,6 @@ export default function Home() {
               <p className={styles.stripText}>{s.text}</p>
             </div>
           ))}
-        </section>
-      </div>
-
-      {/* Foto-/Video-Collage */}
-      <div className={`container ${styles.collageWrap}`}>
-        <section className={styles.collage} aria-label="Einblicke in die Werkstatt">
-          {startseite.collageHintergrund.src && (
-            <Foto bild={startseite.collageHintergrund} className={styles.collageBg} sizes="1120px" />
-          )}
-          <Foto bild={links} className={styles.tile} sizes="(max-width: 640px) 50vw, 340px" />
-          <VideoBlock video={video} variant="light" className={`${styles.tile} ${styles.tileCenter}`} />
-          <Foto bild={rechts} className={styles.tile} sizes="(max-width: 640px) 50vw, 340px" />
         </section>
       </div>
 

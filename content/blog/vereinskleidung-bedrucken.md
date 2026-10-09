@@ -3,6 +3,7 @@ title: "Vereinskleidung bedrucken: Trikots, Hoodies und Teamwear mit Namen"
 date: 2026-10-02
 kategorie: Druckerei
 excerpt: "Vom Vereinswappen bis zur Rückennummer: So planen Sie Teamkleidung, die zusammenpasst und lange hält."
+cover: /media/blog/vereinskleidung-bedrucken.jpg
 ---
 
 Ob Fußballverein, Chor, Schulklasse oder Abschlussjahrgang – einheitliche Kleidung stärkt den Zusammenhalt. Mit etwas Planung wird das Ergebnis besonders gut.

@@ -57,41 +57,6 @@
   color: var(--text-3);
 }
 
-/* Collage: drei Kacheln, mittig im dunklen Block, gleiche Breite wie der übrige Inhalt */
-.collageWrap {
-  margin-top: 72px;
-}
-
-.collage {
-  position: relative;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  align-items: center;
-  gap: 24px;
-  padding: 56px;
-  border-radius: var(--radius-section);
-  background: linear-gradient(90deg, #1c1c1c 0%, #2b2b2b 55%, #444444 100%);
-}
-
-.collage .collageBg {
-  position: absolute;
-  inset: 0;
-  border-radius: 0;
-}
-
-.collage .tile {
-  position: relative;
-  aspect-ratio: 4 / 5;
-  border-radius: var(--radius-card);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
-}
-
-/* Mitte etwas größer – ruhiger Akzent statt Treppe */
-.collage .tileCenter {
-  aspect-ratio: 4 / 5.6;
-}
-
 /* Stickerei / Druckerei */
 .twoWays {
   margin-top: 80px;
@@ -164,10 +129,6 @@
 }
 
 @media (max-width: 900px) {
-  .collage {
-    padding: 32px;
-    gap: 16px;
-  }
   .strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -176,7 +137,7 @@
   }
 }
 
-/* Mobil: Collage stapelt sich (Vorlage: drei Kacheln nebeneinander, bei 360px nicht lesbar) */
+/* Mobil */
 @media (max-width: 640px) {
   .hero {
     padding-top: 56px;
@@ -191,24 +152,6 @@
     grid-template-columns: 1fr;
     padding: 28px 24px;
     gap: 24px;
-  }
-  .collageWrap {
-    margin-top: 48px;
-  }
-  /* Mobil: Video oben über die ganze Breite, die beiden Fotos darunter nebeneinander */
-  .collage {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    padding: 16px;
-    gap: 12px;
-    border-radius: var(--radius-block);
-  }
-  .collage .tileCenter {
-    grid-column: 1 / -1;
-    grid-row: 1;
-    aspect-ratio: 4 / 3;
-  }
-  .collage .tile {
-    border-radius: var(--radius-small);
   }
   .twoWays {
     margin-top: 48px;

@@ -3,6 +3,7 @@ title: "Bestickt und bedruckt: So pflegen Sie Ihre Textilien richtig"
 date: 2026-10-06
 kategorie: Pflege
 excerpt: "Mit ein paar einfachen Regeln bleiben Stickerei und Druck lange schön – vom Waschen über das Trocknen bis zum Bügeln."
+cover: /media/blog/textilien-richtig-pflegen.jpg
 ---
 
 Eine gute Veredelung hält lange – wenn sie richtig gepflegt wird. Die folgenden Hinweise gelten als bewährte Faustregeln in der Textilveredelung. Maßgeblich ist aber immer das **Pflegeetikett des Textils**.

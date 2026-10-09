@@ -7,17 +7,6 @@ export type Bild = { alt: string; src?: string };
 export type Video = { beschreibung: string; src?: string; webm?: string; poster?: string };
 
 export const startseite = {
-  collageHintergrund: { alt: "Stickmaschine in der Werkstatt" } as Bild,
-  collage: [
-    { alt: "Mehrkopf-Stickmaschine mit Garnkonen", src: "/media/start/stickmaschine.jpg" } as Bild, // Pexels – durch eigenes Foto ersetzen
-    {
-      beschreibung: "Garnkonus an der Stickmaschine",
-      src: "/media/video/garnkonus.mp4",
-      webm: "/media/video/garnkonus.webm",
-      poster: "/media/video/garnkonus-poster.jpg",
-    } as Video,
-    { alt: "T-Shirt auf dem Siebdruck-Karussell", src: "/media/start/siebdruck.jpg" } as Bild, // Pexels – durch eigenes Foto ersetzen
-  ] as const,
   // Aus design/design.pdf (Flyer-Mockups) zugeschnitten – durch echte Fotos ersetzen, sobald vorhanden
   stickereiKarte: {
     alt: "Graues Poloshirt mit CBF24-Logo auf der Brust",

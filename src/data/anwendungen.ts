@@ -99,7 +99,7 @@ export const anwendungen: Anwendung[] = [
       TEXTIL_FRAGE,
     ],
     leistung: "Druck",
-    blog: ["siebdruck-flex-oder-flock", "stickerei-oder-druck", "textilien-richtig-pflegen"],
+    blog: ["siebdruck-flex-oder-flock", "vektor-oder-pixel", "textilien-richtig-pflegen"],
   },
   {
     slug: "hoodies-pullover",
@@ -136,7 +136,7 @@ export const anwendungen: Anwendung[] = [
       TEXTIL_FRAGE,
     ],
     leistung: "Textilien + Veredelung",
-    blog: ["stickerei-oder-druck", "logo-positionen-und-groessen", "textilien-richtig-pflegen"],
+    blog: ["vereinskleidung-bedrucken", "logo-positionen-und-groessen", "textilien-richtig-pflegen"],
   },
   {
     slug: "teamwear-vereinskleidung",
@@ -170,7 +170,7 @@ export const anwendungen: Anwendung[] = [
       TEXTIL_FRAGE,
     ],
     leistung: "Textilien + Veredelung",
-    blog: ["vereinskleidung-bedrucken", "logo-positionen-und-groessen", "stickerei-oder-druck"],
+    blog: ["vereinskleidung-bedrucken", "logo-positionen-und-groessen", "textilien-richtig-pflegen"],
   },
   {
     slug: "abschlusspullis",
@@ -313,7 +313,7 @@ export const anwendungen: Anwendung[] = [
       DATEI_FRAGE,
     ],
     leistung: "Stickerei",
-    blog: ["logo-positionen-und-groessen", "was-ist-ein-stickprogramm", "stickerei-oder-druck"],
+    blog: ["logo-positionen-und-groessen", "was-ist-ein-stickprogramm", "arbeitskleidung-besticken"],
   },
 ];
 

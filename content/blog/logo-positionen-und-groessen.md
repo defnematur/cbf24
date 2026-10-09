@@ -3,6 +3,7 @@ title: "Brust, Rücken, Ärmel: Gängige Logo-Positionen und -Größen"
 date: 2026-10-05
 kategorie: Ratgeber
 excerpt: "Wo sitzt das Logo am besten und wie groß sollte es sein? Ein Überblick über die Positionen, die sich in der Praxis bewährt haben."
+cover: /media/blog/logo-positionen-und-groessen.jpg
 ---
 
 Die Position entscheidet mit darüber, wie professionell ein Textil wirkt. Diese Platzierungen haben sich in der Textilveredelung als Standard durchgesetzt:
