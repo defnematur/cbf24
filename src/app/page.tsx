@@ -5,7 +5,7 @@ import { Icon } from "@/components/Icon";
 import { Foto, VideoBlock } from "@/components/Media";
 import { TextilangebotBanner } from "@/components/TextilangebotBanner";
 import { instagramUrl, kontakt } from "@/data/kontakt";
-import { instagramPosts, startseite } from "@/data/medien";
+import { instagramPosts, instagramRasterAnzeigen, startseite } from "@/data/medien";
 import { getPosts } from "@/lib/blog";
 import styles from "./page.module.css";
 
@@ -101,31 +101,33 @@ export default function Home() {
         <TextilangebotBanner />
       </div>
 
-      {/* Instagram – statisches Raster, lädt nichts von Meta */}
-      <section className={`container ${styles.block}`} aria-labelledby="instagram-titel">
-        <div className={styles.blockHead}>
-          <div className="section-head">
-            <span className="eyebrow">Aus der Werkstatt</span>
-            <h2 id="instagram-titel" className="section-title">
-              Neueste Arbeiten auf Instagram
-            </h2>
+      {/* Instagram – statisches Raster, lädt nichts von Meta. Ein/aus: instagramRasterAnzeigen */}
+      {instagramRasterAnzeigen && (
+        <section className={`container ${styles.block}`} aria-labelledby="instagram-titel">
+          <div className={styles.blockHead}>
+            <div className="section-head">
+              <span className="eyebrow">Aus der Werkstatt</span>
+              <h2 id="instagram-titel" className="section-title">
+                Neueste Arbeiten auf Instagram
+              </h2>
+            </div>
+            <ExternalLink href={instagramUrl()} className="btn btn--light btn--sm" icon={false}>
+              <Icon name="instagram" />@{kontakt.instagramHandle ?? "[INSTAGRAM-HANDLE]"} folgen
+            </ExternalLink>
           </div>
-          <ExternalLink href={instagramUrl()} className="btn btn--light btn--sm" icon={false}>
-            <Icon name="instagram" />@{kontakt.instagramHandle ?? "[INSTAGRAM-HANDLE]"} folgen
-          </ExternalLink>
-        </div>
-        <div className={styles.instaGrid}>
-          {instagramPosts.map((p, i) =>
-            p.href ? (
-              <ExternalLink key={i} href={p.href} icon={false}>
-                <Foto bild={p} className={styles.instaItem} sizes="(max-width: 640px) 50vw, 280px" />
-              </ExternalLink>
-            ) : (
-              <Foto key={i} bild={p} className={styles.instaItem} tone={i % 2 ? "mid" : "light"} />
-            ),
-          )}
-        </div>
-      </section>
+          <div className={styles.instaGrid}>
+            {instagramPosts.map((p, i) =>
+              p.href ? (
+                <ExternalLink key={i} href={p.href} icon={false}>
+                  <Foto bild={p} className={styles.instaItem} sizes="(max-width: 640px) 50vw, 280px" />
+                </ExternalLink>
+              ) : (
+                <Foto key={i} bild={p} className={styles.instaItem} tone={i % 2 ? "mid" : "light"} />
+              ),
+            )}
+          </div>
+        </section>
+      )}
 
       {/* Blog */}
       <section className={`container ${styles.block}`} aria-labelledby="blog-titel">

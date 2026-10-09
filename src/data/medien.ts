@@ -23,6 +23,9 @@ export const startseite = {
   } as Bild,
 };
 
+// Instagram-Raster auf der Startseite vorerst ausgeblendet – auf true setzen, sobald echte Posts eingetragen sind.
+export const instagramRasterAnzeigen = false;
+
 export const instagramPosts: (Bild & { href?: string })[] = [
   { alt: "Instagram-Post 1" },
   { alt: "Instagram-Post 2" },
