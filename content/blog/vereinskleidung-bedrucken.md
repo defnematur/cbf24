@@ -26,3 +26,5 @@ Ob Fußballverein, Chor, Schulklasse oder Abschlussjahrgang – einheitliche Kle
 Ein beliebter Klassiker: vorne das Schullogo, hinten der Jahrgang mit allen Namen. Schicken Sie uns die Namensliste einfach als Text oder PDF mit der Anfrage.
 
 [Vereinskleidung anfragen](/kontakt?leistung=Druck#anfrage)
+
+Passend dazu: [Teamwear & Vereinskleidung](/teamwear-vereinskleidung) · [Abschluss- & Abipullis](/abschlusspullis)

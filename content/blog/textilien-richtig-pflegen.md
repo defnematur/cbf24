@@ -30,3 +30,5 @@ Waschen Sie neu veredelte Textilien möglichst erst nach einigen Tagen zum erste
 ## Fragen zur Pflege?
 
 Bei speziellen Textilien wie Funktionsjacken, Softshell oder Frottee beraten wir Sie gern zur passenden Veredelung und Pflege. [Jetzt anfragen](/kontakt#anfrage)
+
+Passend dazu: [T-Shirts bedrucken](/t-shirts-bedrucken) · [Arbeitskleidung mit Logo](/arbeitskleidung-mit-logo)

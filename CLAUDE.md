@@ -33,6 +33,7 @@ Next 16 notes: `params` in pages are a Promise (`await params`); middleware is c
 | `/` | `design/index.html` | Hero, 4-service strip, photo/video collage, Stickerei and Druckerei teaser cards, Textilangebot banner, Instagram grid, 3 latest blog posts, footer |
 | `/leistungen` | `design/leistungen.html` | Tabs/anchors `#stickerei`, `#druckerei`, `#applikationen`; each with intro, process video, process steps, examples gallery, prices |
 | `/kontakt` | `design/kontakt.html` | Enquiry form with file upload, address/phone/mail/hours, map, WhatsApp, Textilangebot banner |
+| `/t-shirts-bedrucken`, `/hoodies-pullover`, `/teamwear-vereinskleidung`, `/abschlusspullis`, `/arbeitskleidung-mit-logo`, `/jga-shirts`, `/caps-besticken` | `src/app/[anwendung]` + `src/data/anwendungen.ts` | SEO landing pages per search intent. Not in the main nav; linked from /leistungen (chips), the footer and blog posts |
 | `/blog`, `/blog/[slug]` | derive from the blog cards on `/` | Post list and post page in the same card style |
 | `/impressum`, `/datenschutz`, `/agb` | simple text pages | Legal pages. **Required.** Copy the existing texts from cbf24.de and have the owner confirm them |
 | External | `https://cbf24-textil.de/` | Textile catalogue run by the supplier. We can't change it, only link to it. Open it in a new tab with an ↗ icon |

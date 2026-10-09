@@ -43,3 +43,5 @@ Dateiformate: .pdf, .eps, .cdr (bis Version 18)
 ## Nur ein JPG?
 
 Kein Problem: Für Stickerei, Sieb-, Offset- und Sublimationsdruck reicht oft eine Pixelgrafik mit 300 dpi in bester JPG-Qualität. Für Flex- und Flockdruck zeichnen wir Ihr Logo als Vektorgrafik nach. Schicken Sie uns einfach, was Sie haben – über das [Anfrageformular](/kontakt#anfrage) können Sie die Datei direkt mitsenden.
+
+Passend dazu: [T-Shirts bedrucken](/t-shirts-bedrucken) · [Abschluss- & Abipullis](/abschlusspullis)

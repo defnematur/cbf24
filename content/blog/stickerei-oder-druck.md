@@ -37,3 +37,5 @@ Beide Verfahren haben ihre Stärken. Welches besser passt, hängt vor allem vom 
 Häufig ist die Kombination die beste Lösung: ein gesticktes Logo auf der Brust und ein großer Druck auf dem Rücken.
 
 Sie sind unsicher? Beschreiben Sie uns Ihr Projekt – wir empfehlen Ihnen das passende Verfahren. [Jetzt anfragen](/kontakt#anfrage)
+
+Passend dazu: [T-Shirts bedrucken](/t-shirts-bedrucken) · [Hoodies & Pullover](/hoodies-pullover) · [Arbeitskleidung mit Logo](/arbeitskleidung-mit-logo)

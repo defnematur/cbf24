@@ -45,3 +45,23 @@
 .address a:hover {
   color: var(--text);
 }
+
+/* Zweite, leisere Zeile: Links zu den Landingpages */
+.anwendungen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--text-4);
+}
+
+.anwendungen a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+}
+
+.anwendungen a:hover {
+  color: var(--text);
+}

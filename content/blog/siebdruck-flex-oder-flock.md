@@ -40,3 +40,5 @@ Samtartige, voll deckende Oberfläche. Nur für grobe Grafiken, keine Farbverlä
 - Samtige Optik, grobe Motive → Flockdruck
 
 Vor- und Nachteile der einzelnen Verfahren – auch zum Sublimationsdruck – erläutern wir gerne im persönlichen Gespräch. [Jetzt anfragen](/kontakt?leistung=Druck#anfrage)
+
+Passend dazu: [T-Shirts bedrucken](/t-shirts-bedrucken) · [JGA-Shirts](/jga-shirts) · [Teamwear & Vereinskleidung](/teamwear-vereinskleidung)

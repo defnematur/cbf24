@@ -1,8 +1,8 @@
 Impressum:
 Firmenbezeichnung: Textilveredelung Textildruck & Bestickung
 Firmenname: CBF-Textildruck und Bestickung
-Anschrift: Unteranger 4
-82041 Oberhaching - Furth
+Anschrift: Bajuwarenring 17a
+82041 Oberhaching
 Tel.089-61469280
 Fax.089-61469281
 e-Mail. info@cbf24.de
@@ -17,7 +17,7 @@ Deshalb distanzieren wir uns hiermit ausdrücklich von allen Inhalten aller geli
 
 Steffen Berthold
 Fa. CBF -TEXTILDRUCK & BESTICKUNG
-Unteranger 4
+Bajuwarenring 17a
 82041 Oberhaching
 
 

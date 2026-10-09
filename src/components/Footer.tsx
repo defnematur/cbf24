@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { anwendungen } from "@/data/anwendungen";
 import { kontakt, links } from "@/data/kontakt";
 import { ExternalLink } from "./ExternalLink";
 import styles from "./Footer.module.css";
@@ -28,6 +29,13 @@ export function Footer() {
           <Link href="/impressum">Impressum</Link>
         </nav>
       </div>
+      <nav aria-label="Beliebte Anwendungen" className={styles.anwendungen}>
+        {anwendungen.map((a) => (
+          <Link key={a.slug} href={`/${a.slug}`}>
+            {a.kurz}
+          </Link>
+        ))}
+      </nav>
     </footer>
   );
 }

@@ -25,3 +25,5 @@ Der Puncher bestimmt maßgeblich die Qualität des fertigen Stickerzeugnisses. H
 Je nach Motiv kann bei der Verwendung von Vektorgrafiken eine Zeit- und somit auch eine Kostenersparnis bei der Stickdateierstellung auftreten. Welche Dateien wir brauchen, lesen Sie in [Vektor oder Pixel?](/blog/vektor-oder-pixel).
 
 Die Preise für die Erstellung des Stickprogramms finden Sie unter [Leistungen › Stickerei](/leistungen#stickerei).
+
+Passend dazu: [Arbeitskleidung mit Logo](/arbeitskleidung-mit-logo) · [Caps besticken](/caps-besticken)

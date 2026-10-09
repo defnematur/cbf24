@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { AnwendungenChips } from "@/components/AnwendungenChips";
 import { ExternalLink } from "@/components/ExternalLink";
 import { Foto, VideoBlock } from "@/components/Media";
 import { DruckPreise, StickPreise } from "@/components/PriceTable";
@@ -263,6 +264,10 @@ export default function Leistungen() {
             Alle Dateiformate je Verfahren
           </Link>
         </section>
+      </div>
+
+      <div className={`container ${styles.sectionGap}`}>
+        <AnwendungenChips titel="Beliebte Anwendungen" />
       </div>
     </>
   );

@@ -38,3 +38,5 @@ Vorne mittig auf der Front, seitlich oder hinten über dem Verschluss. Die Fläc
 - **Taschen, Nähte, Reißverschlüsse beachten:** Nicht jede Position ist auf jedem Textil frei.
 
 Unsicher, was zu Ihrem Textil passt? Schicken Sie uns Logo und Artikel – wir empfehlen Ihnen Position und Größe. [Anfrage senden](/kontakt#anfrage)
+
+Passend dazu: [Hoodies & Pullover](/hoodies-pullover) · [Caps besticken](/caps-besticken) · [Arbeitskleidung mit Logo](/arbeitskleidung-mit-logo)

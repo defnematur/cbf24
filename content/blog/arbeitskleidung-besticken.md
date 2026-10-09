@@ -31,3 +31,5 @@ Passende Arbeitskleidung finden Sie im [Textilkatalog](https://cbf24-textil.de/)
 Ihr Stickprogramm wird bei uns archiviert. Neue Mitarbeitende, Ersatzteile oder eine Nachbestellung im nächsten Jahr? Dann fallen keine erneuten Erstellungskosten an.
 
 [Arbeitskleidung besticken lassen](/kontakt?leistung=Stickerei#anfrage)
+
+Passend dazu: [Arbeitskleidung mit Logo](/arbeitskleidung-mit-logo) · [Caps besticken](/caps-besticken)
