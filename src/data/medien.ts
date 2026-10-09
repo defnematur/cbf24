@@ -7,6 +7,13 @@ export type Bild = { alt: string; src?: string };
 export type Video = { beschreibung: string; src?: string; webm?: string; poster?: string };
 
 export const startseite = {
+  // Video-Bühne unter der Überschrift (Pexels-Clip: Cap wird bestickt) – durch eigene Aufnahme ersetzen
+  heroVideo: {
+    beschreibung: "Stickmaschine bestickt eine Cap",
+    src: "/media/video/hero-stickerei.mp4",
+    webm: "/media/video/hero-stickerei.webm",
+    poster: "/media/video/hero-stickerei-poster.jpg",
+  } as Video,
   // Aus design/design.pdf (Flyer-Mockups) zugeschnitten – durch echte Fotos ersetzen, sobald vorhanden
   stickereiKarte: {
     alt: "Graues Poloshirt mit CBF24-Logo auf der Brust",

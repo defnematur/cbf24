@@ -2,7 +2,7 @@ import Link from "next/link";
 import { BlogCard, BlogGrid } from "@/components/BlogCard";
 import { ExternalLink } from "@/components/ExternalLink";
 import { Icon } from "@/components/Icon";
-import { Foto } from "@/components/Media";
+import { Foto, VideoBlock } from "@/components/Media";
 import { TextilangebotBanner } from "@/components/TextilangebotBanner";
 import { instagramUrl, kontakt } from "@/data/kontakt";
 import { instagramPosts, instagramRasterAnzeigen, startseite } from "@/data/medien";
@@ -38,8 +38,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Leistungen-Leiste */}
+      {/* Video-Bühne; die Leistungen-Leiste schwebt über ihrer Unterkante */}
       <div className="container">
+        <VideoBlock video={startseite.heroVideo} className={styles.stage} />
+      </div>
+
+      {/* Leistungen-Leiste */}
+      <div className={`container ${styles.stripOverlap}`}>
         <section className={`card ${styles.strip}`} aria-label="Unsere Leistungen">
           {services.map((s) => (
             <div key={s.title} className={styles.stripItem}>

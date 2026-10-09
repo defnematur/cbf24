@@ -23,6 +23,19 @@
   max-width: 560px;
 }
 
+/* Video-Bühne */
+.stage.stage {
+  aspect-ratio: 1120 / 460;
+  border-radius: var(--radius-section);
+  background: var(--video);
+}
+
+.stripOverlap {
+  position: relative;
+  z-index: 1;
+  margin-top: -72px;
+}
+
 /* Leistungen-Leiste */
 .strip {
   max-width: 920px;
@@ -147,6 +160,17 @@
   }
   .lead {
     font-size: 17px;
+  }
+  .stage.stage {
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius-block);
+  }
+  .stripOverlap {
+    margin-top: -40px;
+  }
+  /* Leiste etwas schmaler als das Video, damit sie auch mobil darüber „schwebt“ */
+  .stripOverlap .strip {
+    margin-inline: 12px;
   }
   .strip {
     grid-template-columns: 1fr;

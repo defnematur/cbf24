@@ -13,3 +13,4 @@ next-env.d.ts
 # Originale (Fotos/Videos) – nur die optimierten Versionen in public/media/ gehören ins Repo
 images/
 videos/
+.superpowers/
