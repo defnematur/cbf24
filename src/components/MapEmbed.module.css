@@ -1,6 +1,8 @@
 .map {
   position: relative;
-  height: 340px;
+  /* Füllt die restliche Höhe der Spalte neben dem Formular */
+  flex: 1 1 auto;
+  min-height: 340px;
   border-radius: var(--radius-block);
   overflow: hidden;
   background: var(--border-2);
@@ -67,6 +69,6 @@
 
 @media (max-width: 640px) {
   .map {
-    height: 380px;
+    min-height: 380px;
   }
 }
