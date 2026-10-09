@@ -38,7 +38,16 @@ Das externe Hosting erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren
 
 Unser(e) Hoster wird bzw. werden Ihre Daten nur insoweit verarbeiten, wie dies zur Erfüllung seiner Leistungspflichten erforderlich ist und unsere Weisungen in Bezug auf diese Daten befolgen.
 
-Wir setzen folgende(n) Hoster ein:
+Wir setzen folgenden Hoster ein:
+
+Vercel Inc.  
+440 N Barranca Ave #4133  
+Covina, CA 91723  
+USA
+
+Die Seiten dieser Website werden über das weltweite Netzwerk von Vercel ausgeliefert. Serverseitige Funktionen wie die Verarbeitung des Kontaktformulars laufen in einem Rechenzentrum in Frankfurt am Main. Ein Zugriff von Vercel aus den USA kann dennoch nicht ausgeschlossen werden. Vercel ist nach dem „EU-US Data Privacy Framework“ (DPF) zertifiziert; das DPF ist ein Übereinkommen zwischen der Europäischen Union und den USA, das die Einhaltung europäischer Datenschutzstandards bei Datenverarbeitungen in den USA gewährleisten soll. Zusätzlich hat Vercel EU-Standardvertragsklauseln abgeschlossen. Weitere Informationen finden Sie in der Datenschutzerklärung von Vercel: https://vercel.com/legal/privacy-policy
+
+Unser E-Mail-Postfach (info@cbf24.de) sowie die Domain-Verwaltung liegen bei:
 
 Telekom Deutschland GmbH  
 Landgrabenweg 151  
@@ -46,7 +55,7 @@ Landgrabenweg 151
 
 ### Auftragsverarbeitung
 
-Wir haben einen Vertrag über Auftragsverarbeitung (AVV) zur Nutzung des oben genannten Dienstes geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet.
+Wir haben mit den oben genannten Anbietern Verträge über Auftragsverarbeitung (AVV) geschlossen. Hierbei handelt es sich um datenschutzrechtlich vorgeschriebene Verträge, die gewährleisten, dass die Anbieter die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeiten.
 
 ## 3. Allgemeine Hinweise und Pflicht­informationen
 
@@ -123,7 +132,24 @@ Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Si
 
 ## 4. Datenerfassung auf dieser Website
 
-### Cookies
+### Server-Log-Dateien
+
+Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
+
+- Browsertyp und Browserversion
+- verwendetes Betriebssystem
+- Referrer URL
+- Hostname des zugreifenden Rechners
+- Uhrzeit der Serveranfrage
+- IP-Adresse
+
+Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website – hierzu müssen die Server-Log-Files erfasst werden.
+
+### Cookies und lokale Speicherung
+
+Diese Website setzt keine Cookies zu Analyse- oder Werbezwecken. Wenn Sie beim Kartendienst die Option „Karte künftig automatisch anzeigen“ wählen oder den Chat starten, speichern wir diese Entscheidung im lokalen Speicher Ihres Browsers (localStorage), damit Sie nicht erneut gefragt werden. Diese Speicherung erfolgt auf Ihren Wunsch (§ 25 Abs. 2 Nr. 2 TDDDG). Sie können sie jederzeit löschen, indem Sie die Website-Daten in Ihrem Browser entfernen.
+
+### Allgemeine Hinweise zu Cookies
 
 Unsere Internetseiten verwenden so genannte „Cookies“. Cookies sind kleine Datenpakete und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert. Session-Cookies werden nach Ende Ihres Besuchs automatisch gelöscht. Permanente Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese selbst löschen oder eine automatische Löschung durch Ihren Webbrowser erfolgt.
 
@@ -145,6 +171,10 @@ Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSG
 
 Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.
 
+#### Versand der Anfragen über Brevo
+
+Damit Ihre Anfrage aus dem Kontaktformular zuverlässig in unserem Postfach ankommt, wird sie als E-Mail über den Versanddienst Brevo übermittelt. Anbieter ist die Sendinblue SAS (Brevo), 106 boulevard Haussmann, 75008 Paris, Frankreich. Dabei werden die von Ihnen eingegebenen Daten einschließlich eines ggf. angehängten Motivs verarbeitet. Brevo verarbeitet die Daten auf Servern in der Europäischen Union. Die Verarbeitung erfolgt auf derselben Rechtsgrundlage wie die Verarbeitung Ihrer Anfrage (Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO). Mit Brevo haben wir einen Vertrag über Auftragsverarbeitung geschlossen. Weitere Informationen: https://www.brevo.com/de/legal/privacypolicy/
+
 ### Anfrage per E-Mail, Telefon oder Telefax
 
 Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
@@ -152,3 +182,33 @@ Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage in
 Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.
 
 Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.
+
+## 5. Plugins und Tools
+
+### Google Maps
+
+Auf unserer Kontaktseite können Sie eine Karte des Kartendienstes Google Maps anzeigen. Anbieter ist die Google Ireland Limited („Google“), Gordon House, Barrow Street, Dublin 4, Irland.
+
+Die Karte wird erst geladen, wenn Sie auf „Karte anzeigen“ klicken (Zwei-Klick-Lösung). Vorher werden keine Daten an Google übertragen. Nach dem Klick wird Ihre IP-Adresse an Google übermittelt und dort gespeichert; Google kann dabei auch Cookies setzen. Die Daten können an Server der Google LLC in den USA übertragen werden. Die Google LLC ist nach dem „EU-US Data Privacy Framework“ (DPF) zertifiziert.
+
+Die Nutzung von Google Maps erfolgt auf Grundlage Ihrer Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. Die Einwilligung ist jederzeit widerrufbar, z. B. indem Sie die gespeicherte Auswahl in Ihrem Browser löschen. Der Link „Route planen“ öffnet Google Maps in einem neuen Fenster; erst dann gelten die Datenschutzbestimmungen von Google. Weitere Informationen: https://policies.google.com/privacy
+
+### Chat-Assistent (Voiceflow)
+
+Auf dieser Website können Sie einen Chat-Assistenten nutzen, der Fragen zu unseren Leistungen beantwortet. Anbieter ist die Voiceflow Inc., Toronto, Kanada.
+
+Der Chat wird erst geladen, wenn Sie auf „Chat mit dem Assistenten starten“ klicken. Vorher werden keine Daten an Voiceflow übertragen. Nach dem Start werden Ihre Chat-Eingaben, Ihre IP-Adresse sowie technische Informationen zu Ihrem Browser an Voiceflow übermittelt und dort verarbeitet, um Ihnen Antworten anzuzeigen. Für die Erstellung der Antworten kann Voiceflow Unterauftragsverarbeiter einsetzen, insbesondere Anbieter von KI-Sprachmodellen, die Daten auch in den USA verarbeiten können. Bitte geben Sie im Chat keine sensiblen Daten ein; für konkrete Anfragen nutzen Sie bitte unser Kontaktformular.
+
+Für Kanada liegt ein Angemessenheitsbeschluss der EU-Kommission vor. Für Übermittlungen in andere Drittländer werden EU-Standardvertragsklauseln verwendet. Die Nutzung erfolgt auf Grundlage Ihrer Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG; die Einwilligung ist jederzeit widerrufbar. Mit Voiceflow haben wir einen Vertrag über Auftragsverarbeitung geschlossen. Weitere Informationen: https://www.voiceflow.com/privacy
+
+### Schriftarten
+
+Die auf dieser Website verwendeten Schriftarten sind lokal auf unserem Server eingebunden. Beim Aufruf der Seite wird keine Verbindung zu Servern von Google oder anderen Schriftanbietern hergestellt.
+
+### Links zu Instagram und WhatsApp
+
+Auf unserer Website verlinken wir auf unser Instagram-Profil sowie auf WhatsApp. Es handelt sich um reine Links; Inhalte dieser Dienste werden nicht in unsere Website eingebunden. Erst wenn Sie einen Link anklicken, werden Sie zum jeweiligen Anbieter (Meta Platforms Ireland Limited, Merrion Road, Dublin 4, D04 X2K5, Irland) weitergeleitet; dort gelten dessen Datenschutzbestimmungen.
+
+---
+
+Stand: Oktober 2026
