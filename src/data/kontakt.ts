@@ -29,6 +29,10 @@ export const links = {
 
 export const siteUrl = "https://www.cbf24.de";
 
+// Testphase (z. B. auf neu.cbf24.de): in Vercel NOINDEX=1 setzen, damit Google die Seite nicht aufnimmt.
+// Beim Umzug auf www.cbf24.de die Variable löschen und neu deployen.
+export const noindex = process.env.NOINDEX === "1";
+
 export function instagramUrl() {
   return kontakt.instagramHandle
     ? `https://www.instagram.com/${kontakt.instagramHandle}/`

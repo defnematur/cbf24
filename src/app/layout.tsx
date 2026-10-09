@@ -8,7 +8,7 @@ import "./globals.css";
 import { ChatButton } from "@/components/ChatButton";
 import { Footer } from "@/components/Footer";
 import { Nav } from "@/components/Nav";
-import { kontakt, siteUrl } from "@/data/kontakt";
+import { kontakt, noindex, siteUrl } from "@/data/kontakt";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   },
   description:
     "Stickerei und Textildruck in Oberhaching bei München: Logos und Schriften auf Arbeitskleidung, Vereinskleidung, T-Shirts und Polos – für Handwerk, Vereine, Schulen, Promotion und Privat.",
+  robots: noindex ? { index: false, follow: false } : undefined,
   openGraph: {
     type: "website",
     locale: "de_DE",
