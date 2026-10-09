@@ -31,7 +31,7 @@ export async function POST(request: Request) {
     console.error("Anfrageformular: SMTP_HOST, SMTP_USER oder SMTP_PASS fehlt.");
     return Response.json({ ok: false }, { status: 500 });
   }
-  const port = Number(env("SMTP_PORT") ?? 465);
+  const port = Number.parseInt(env("SMTP_PORT") ?? "", 10) || 465;
 
   const feld = (key: string) => String(data.get(key) ?? "").trim();
   const name = einzeilig(feld("name"));
